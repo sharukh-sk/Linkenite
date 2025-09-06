@@ -1,0 +1,23 @@
+1. Install required Python packages
+-->bash
+
+2. Set your OpenAI API key as environment variable
+-->export OPENAI_API_KEY="your_openai_api_key_here"
+
+3. Run Backend Server
+-->uvicorn main:app --reload
+
+4. Frontend React App
+Create a React app (e.g., with Create React App):
+-->npx create-react-app support-dashboard
+   cd support-dashboard
+   npm start
+
+5. Run Frontend
+-->npm start
+
+-------------------------------------------------------------
+
+1)Backend loads your dataset, filters and prioritizes emails, analyzes sentiment, extracts info, and generates real AI responses using OpenAI GPT-4.
+2)Frontend displays emails with metadata and AI-generated draft responses editable by the user.
+3)You can save edited responses back to the backend.
